@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0px 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+
+}
+
+.nav-logo {
+    width: 200px;
+
+}
+
+.nav-profile {
+    width: 75px;
+
+}
+
+.navbar img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-title {
+    font-family: 'Arial', sans-serif;
+    /* Choose a modern, clean font */
+    font-size: 24px;
+    /* Adjust the size according to your design */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #1e0f0f;
+    /* White text for contrast against dark background */
+    /* Transform text to uppercase for a bold statement */
+    letter-spacing: 2px;
+    /* Add some space between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    animation: fadeIn 2s ease-in-out;
+    /* Add animation for fading in */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for the navbar title */
+.navbar-title:hover {
+    color: #ff6347;
+    /* Change color on hover (Tomato color) */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    animation: bounce 0.5s;
+    /* Add bounce animation on hover */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.div p {
+    margin: 0px;
+    font-size: 12px;
+}
