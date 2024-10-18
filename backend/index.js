@@ -11,10 +11,7 @@ const { error } = require("console")
 app.use(express.json());
 app.use(cors());
 
-// database mongodb+srv://sycosanty001:azadchauhanecommerce@cluster0.3cuwbid.mongodb.net/
 
-
-// mongoose.connect("mongodb+srv://sycosanty001:azadchauhanecommerce@cluster0.3cuwbid.mongodb.net/e-commerce")
 mongoose.connect("mongodb://localhost:27017/")
 .then(() => console.log('Database connected successfully'))
 .catch(err => console.error('Database connection error:', err));
